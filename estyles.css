@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+:root{
+    --color1: hotpink;
+    --box-shadow: 6px 6px 10px rgba(0,255,0,.5);
+    --gradient: linear-gradient(to top, #a18cd17a 0%, #fbc2eb76 100%);
+
+}
+
 body{
     font-family: 'arial';
     min-height: 100vh;
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: var(--gradient);
 }
 
 .card{
@@ -15,12 +22,12 @@ body{
     width: 300px;
     margin: 30px auto;
     padding: 30px 20px;
-    box-shadow: 6px 6px 10px rgba(0,0,0,.5);
+    box-shadow: var(--box-shadow);
 }
 
 .card__title{
     font-size: 30px;
-    color: darkblue;
+    color: var(--color1);
     margin-bottom: 20px;
 
 }
@@ -37,7 +44,7 @@ body{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: var(--gradient);
 
 }
 
@@ -46,5 +53,12 @@ body{
     width: 300px;
     margin: 30px auto;
     padding: 30px 20px;
-    box-shadow: 6px 6px 10px rgba(0,0,0,.5);
+    box-shadow: var(--box-shadow);
+    --color1: crimson;
+}
+
+.card2__title{
+    font-size: 30px;
+    color: var(--color1);
+    margin-bottom: 20px;
 }
